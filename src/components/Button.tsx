@@ -31,7 +31,10 @@ type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">;
 
 const Button = ({ variant, size, className, ...props }: ButtonProps) => {
   return (
-    <button className={twMerge(buttonStyles({ variant, size }), className)} />
+    <button
+      {...props}
+      className={twMerge(buttonStyles({ variant, size }), className)}
+    />
   );
 };
 
