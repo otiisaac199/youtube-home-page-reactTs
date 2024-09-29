@@ -1,5 +1,5 @@
 const LEADING_ZERO_FORMATTER = new Intl.NumberFormat(undefined, {
-  mininumIntegerDigits: 2,
+  minimumIntegerDigits: 2,
 });
 
 export const formatDuration = (duration: number) => {
